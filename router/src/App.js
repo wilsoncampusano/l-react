@@ -1,22 +1,21 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom'
 
-
-
-const NewRoute = () => {
-  return (
-    <div>
-
-      <p>new route </p>
-    </div>
-  );
-}
+import Home from './components/Home'
+import About from './components/About'
+import Contact from './components/Contant'
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <Route path="/new" component={NewRoute}/>
+
+        <div>
+              <Route path="/" component= { Home }></Route>
+              <Route path="/contact" component={ Contact }></Route>
+              <Route path="/about" component = { About }></Route>
+        </div>
+
       </BrowserRouter>
     );
   }
