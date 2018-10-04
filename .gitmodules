@@ -1,3 +1,7 @@
 [submodule "slack-clone"]
 	path = slack-clone
 	url = https://github.com/pusher/build-a-slack-clone-with-react-and-pusher-chatkit.git
+[submodule "slack-2"]
+	path = slack-2
+	url = https://github.com/pusher/build-a-slack-clone-with-react-and-pusher-chatkit.git
+	branch = complete
