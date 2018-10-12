@@ -12,6 +12,14 @@ const user = {
   lastName: 'Perez'
 };
 
+function greeting(user){
+  if (user){
+    return element
+  }else {
+    return <h1>Hello, Stranger.</h1>
+  }
+}
+
 const element = <h1>Hello , {formatName(user)}!</h1>
 
 class App extends Component {
@@ -19,7 +27,7 @@ class App extends Component {
 
   render() {
     return (
-      element
+      greeting()
     );
   }
 }
