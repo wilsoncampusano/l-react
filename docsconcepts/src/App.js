@@ -9,7 +9,8 @@ function formatName(user){
 
 const user = {
   firstName: 'Harper',
-  lastName: 'Perez'
+  lastName: 'Perez',
+  avatarId: "1234567890"
 };
 
 function greeting(user){
@@ -20,14 +21,14 @@ function greeting(user){
   }
 }
 
-const element = <h1>Hello , {formatName(user)}!</h1>
+const element = <div  tabIndex="0"> <h1 data-custom-id={ user.avatarId } >Hello , {formatName(user)}!</h1> </div>
 
 class App extends Component {
   
 
   render() {
     return (
-      greeting()
+      greeting(user)
     );
   }
 }
